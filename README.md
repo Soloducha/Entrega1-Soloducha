@@ -7,3 +7,6 @@ en el Header del sitio estan todos los botones para realizar lo pedido en el Tra
 usuario y password: admin
 
 (Lo realice solo por que no tengo compañeros asignados hasta la fecha.)
+
+
+Las bases de datos no estan relacionadas, por lo que se puede crear un animal con el nombre de un dueño que no exista en la base.
