@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Coder House - Leandro Soloducha</title>
+         
+        <link href="{% static 'Veterinaria/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <h1 class="container">Coder House - Entrega Intermedia del Proyecto Final</h1>
+        </nav>
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="btn btn-dark" href="/">Inicio</a>
+                <a class="btn btn-primary" href="/formulario_veterinario/"> Crear Veterinario</a>
+                <a class="btn btn-primary" href="/buscar_veterinario/">Buscar Veterinario</a>
+                <a class="btn btn-primary" href="/formulario_animal/">Crear Animal</a>
+                <a class="btn btn-primary" href="/buscar_animal/">Buscar Animal</a>
+                <a class="btn btn-primary" href="/formulario_cliente/">Crear Cliente</a>
+                <a class="btn btn-primary" href="/buscar_cliente/">Buscar Cliente</a>
+                <a class="btn btn-danger" href="/admin/">Admin</a>
+            </div>
+        </nav>
+
+        {% block contenido_pagina %}
+        {% endblock %}
+
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-lg-start my-auto">
+                      <p class="text-muted medium mb-lg-0"> Creado por Leandro Soloducha</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

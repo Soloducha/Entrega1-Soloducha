@@ -1,0 +1,14 @@
+{% extends "Veterinaria/header_y_footer.html" %}
+
+{% load static %}
+
+{% block contenido_pagina %}
+<form action="/buscar_animal/" method="POST">{% csrf_token %}
+    <div class="container">
+        <p>Nombre del Animal: <br>
+            <input type="text" name="nombre" id="nombre">
+        </p>
+        <input type="submit" value="Buscar el animal">
+    </div>
+</form>
+{% endblock %}

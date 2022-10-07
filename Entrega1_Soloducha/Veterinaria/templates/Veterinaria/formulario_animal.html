@@ -1,0 +1,15 @@
+{% extends "Veterinaria/header_y_footer.html" %}
+
+{% load static %}
+
+{% block contenido_pagina %}
+<div class="container"> 
+    <form action="/formulario_animal/" method="POST">{% csrf_token %}
+        <h4>Ingrese los datos del Animal:</h4>
+        <table>
+            {{ formulario.as_table }}
+        </table>
+        <br><input type="submit" value="Guardar Animal">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "Veterinaria/header_y_footer.html" %}
+
+{% load static %}
+
+{% block contenido_pagina %}
+
+<form action="/buscar_veterinario/" method="POST">{% csrf_token %}
+  <div class="container">
+    <p>Matricula del Veterinario: <br>
+      <input type="number" name="matricula" id="matricula">
+    </p>
+    <input type="submit" value="Buscar el Veterinario">
+  </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "Veterinaria/header_y_footer.html" %}
+
+{% block contenido_pagina %}
+<div class="container"> 
+<ul>
+    {% for resultado in resultados %}
+        <li>({{resultado.matricula}}) {{resultado.nombre}} {{resultado.apellido}}</li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}
